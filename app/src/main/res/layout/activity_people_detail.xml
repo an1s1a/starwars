@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailActivity"
+    android:background="@color/background">
+<RelativeLayout
+    android:id="@+id/activity_people_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/text_personal_info"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:id="@+id/divider_name"
+        style="@style/MainDivider"
+        android:layout_below="@id/text_personal_info"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/born_textView"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/born" />
+
+    <TextView
+        android:id="@+id/character_born"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/born_textView"
+        android:layout_alignBottom="@+id/born_textView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/born_textView" />
+
+    <TextView
+        android:id="@+id/gender_textView"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/born_textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/gender" />
+
+    <TextView
+        android:id="@+id/character_gender"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gender_textView"
+        android:layout_alignBottom="@+id/gender_textView"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/gender_textView" />
+
+    <TextView
+        android:id="@+id/hair_textView"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/hair_color" />
+
+    <TextView
+        android:id="@+id/character_hair"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hair_textView"
+        android:layout_alignBottom="@+id/hair_textView"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/hair_textView" />
+
+    <TextView
+        android:id="@+id/skin_textView"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hair_textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/skin" />
+
+    <TextView
+        android:id="@+id/character_skin"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/skin_textView"
+        android:layout_alignBottom="@+id/skin_textView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/skin_textView" />
+
+    <TextView
+        android:id="@+id/height_textView"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skin_textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/height" />
+
+    <TextView
+        android:id="@+id/character_height"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/height_textView"
+        android:layout_alignBottom="@+id/height_textView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/height_textView" />
+
+    <TextView
+        android:id="@+id/homeworld_textView"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height_textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/homeworld" />
+
+
+    <TextView
+        android:id="@+id/character_homeworld"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/homeworld_textView"
+        android:layout_alignBottom="@+id/homeworld_textView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/homeworld_textView" />
+
+    <TextView
+        android:id="@+id/text_vehicles_info"
+        style="@style/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/character_homeworld"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/vehicles" />
+
+    <View
+        android:id="@+id/divider_vehicles"
+        style="@style/MainDivider"
+        android:layout_below="@id/text_vehicles_info"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_vehicles"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/text_film_info"
+        style="@style/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view_vehicle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/films" />
+
+    <View
+        android:id="@+id/divider_film"
+        style="@style/MainDivider"
+        android:layout_below="@id/text_film_info"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_film"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
+</ScrollView>

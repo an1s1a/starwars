@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt = "http://schemas.android.com/aapt">
+
+    <aapt:attr name = "android:drawable">
+
+        <vector
+            android:width = "56dp"
+            android:height = "56dp"
+            android:viewportWidth="56"
+            android:viewportHeight="56"
+            android:gravity="center">
+
+            <path android:pathData = "@string/heart_full_path"
+                android:fillColor = "@color/colorAccent"/>
+
+            <group android:name = "empty">
+
+                <clip-path
+                    android:name = "clip"
+                    android:pathData = "@string/heart_hidden"/>
+
+                <path
+                    android:pathData="@string/heart_hidden"
+                    android:fillColor="@color/colorAccent" />
+            </group>
+
+        </vector>
+    </aapt:attr>
+
+    <target android:name="clip">
+
+        <aapt:attr name="android:animation">
+
+            <set android:ordering="sequentially">
+
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/heart_shown"
+                    android:valueTo="@string/heart_mid"
+                    android:valueType="pathType"
+                    android:duration="120"
+                    android:interpolator="@android:interpolator/linear_out_slow_in"/>
+
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/heart_mid"
+                    android:valueTo="@string/heart_hidden"
+                    android:valueType="pathType"
+                    android:duration="120"
+                    android:interpolator="@android:interpolator/linear_out_slow_in" />
+
+                <objectAnimator
+                    android:propertyName="scale"
+                    android:valueFrom="@string/heart_mid"
+                    android:valueTo="@string/heart_hidden"
+                    android:valueType="pathType"
+                    android:duration="160"
+                    android:interpolator="@android:interpolator/fast_out_linear_in" />
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+</animated-vector>
